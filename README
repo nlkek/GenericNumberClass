@@ -1,0 +1,15 @@
+Функция create_number_class принимает в качестве параметра строку alphabet для представления числа и возвращает класс числа, составленного 
+из этого алфавита.
+
+Класс реализует операции +, -, *, //, метод строкового представления объекта и метод перевода числа в систему счисления другого класса,
+переданного в качестве параметра.
+
+BinClass = create_number_class('01')
+HexClass = create_number_class('0123456789ABCDEF')
+
+x = BinClass('1010')
+y = BinClass('10')
+
+print(x+y)                   => '1100'
+isinstance(x+y, BinClass)    => True
+print(x.convert_to(HexClass) => 'A'
